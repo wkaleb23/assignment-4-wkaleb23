@@ -77,8 +77,8 @@ def play_round(game_deck):
 
         # Put the cards back in the deck
         # so we don't "lose" them
-        push_card_to_deck(led_card, game_deck)
-        push_card_to_deck(followed_card, game_deck)
+        push_card_to_deck(game_deck, led_card)
+        push_card_to_deck(game_deck, followed_card)
 
         num_tricks += 1
 
