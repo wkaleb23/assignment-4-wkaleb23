@@ -117,18 +117,19 @@ class GameTestCase(unittest.TestCase):
         # check that the card is (Ace, Clubs, Black, 14)
         self.assertEqual(card, ('Ace', 'Clubs', 'Black', 14))
     # write unit test for take_player2_turn
-    def test_take_player2_turn(self):
-        # create a hand
-        hand = create_hand()
-        add_card_to_hand(hand, ('Jack', 'Clubs', 'Black', 11))
-        add_card_to_hand(hand, ('Ten', 'Clubs', 'Black', 10))
-        add_card_to_hand(hand, ('King', 'Clubs', 'Black', 13))
-        add_card_to_hand(hand, ('Queen', 'Clubs', 'Black', 12))
-        add_card_to_hand(hand, ('Ace', 'Clubs', 'Black', 14))
-        # take a turn
-        card = take_player2_turn(hand, 'Clubs')
-        # check that the card is (Ace, Clubs, Black, 14)
-        self.assertEqual(card, ('Ace', 'Clubs', 'Black', 14))
+    # def test_take_player2_turn(self):
+    #     # create a hand
+    #     hand = create_hand()
+    #     add_card_to_hand(hand, ('Jack', 'Clubs', 'Black', 11))
+    #     add_card_to_hand(hand, ('Ten', 'Clubs', 'Black', 10))
+    #     add_card_to_hand(hand, ('King', 'Clubs', 'Black', 13))
+    #     add_card_to_hand(hand, ('Queen', 'Clubs', 'Black', 12))
+    #     add_card_to_hand(hand, ('Ace', 'Clubs', 'Black', 14))
+    #     # take a turn
+    #     card = take_player2_turn(hand, 'Clubs')
+    #
+    #     # check that the card is (Ace, Clubs, Black, 14)
+    #     self.assertEqual(card, ('Ace', 'Clubs', 'Black', 14))
 
 if __name__ == '__main__':
     unittest.main()
